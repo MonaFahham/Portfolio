@@ -99,19 +99,27 @@
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-                                <div class="hero-text">
-                                    <div class="herolider">
-                                        <ul class="caption-slides">
-                                            <li class="caption">
-                                                <!-- <h1>I am</h1> -->
-                                                <!-- <div class="div-line"></div> -->
-                                                <p class="hero">
-                                                    Mona Fahham
-                                                </p>
-                                            </li>
+                            <div class="herolider">
+                                <div class="leftsi">
+                                    <div class="monatext">
 
-                                            <!-- <li class="caption">
+                                        <h1>
+                                            <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Mona.", "I am developer." ]'>
+                                                <span class="wrap"></span>
+                                            </a>
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <button type="btn btn-danger">Download CV</button>
+                                    </div>
+
+
+                                </div>
+                                <div class="loader">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <!-- <li class="caption">
                                                 <h1>RESPONSIVE TEMPLATES</h1>
                                                 <div class="div-line"></div>
                                                 <p class="hero">Design &amp; Development</p>
@@ -122,18 +130,17 @@
                                                 <div class="div-line"></div>
                                                 <p class="hero">HTML5 &amp; CSS3</p>
                                             </li> -->
-                                        </ul>
-                                    </div>
-                                    <!-- end herolider -->
-                                </div>
-                                <!-- end hero-text -->
 
-                                <!-- <div class="hero-btn">
+                            </div>
+                            <!-- end herolider -->
+                            <!-- end hero-text -->
+
+                            <!-- <div class="hero-btn">
                                     <a href="#landing-offer" class="btn btn-clean">Read more</a>
                                 </div> -->
-                                <!-- end hero-btn -->
-                            </div>
+                            <!-- end hero-btn -->
                             <!-- end col-md-6 -->
+
                         </div>
                         <!-- end row -->
                     </div>
@@ -675,71 +682,104 @@
                             </div>
                         </div>
                         <!-- End row -->
+
                     </div>
                     <!-- end title-section -->
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
-                                <div class="shot">
-                                    <div class="screen ">
-                                        <a class="zoom fit-image" href="/assets/images/project-1.JPG"><img src="/assets/images/project-1.JPG" alt="project-1" /></a>
-                                    </div>
-                                    <!-- end screen -->
+                    <!-- Portfolio Start -->
+                    <div class="container-fluid pt-5 pb-3" id="portfolio">
+                        <div class="container text-center">
+                            <!-- <h2>Projects</h2> -->
+                            <div class="row">
+                                <div class="col-6 text-center mb-2">
+                                    <ul class="list-inline mb-4" id="portfolio-flters">
+                                        <li class="btn btn-sm monabtn btn-outline-primary m-1 active" data-filter="*">All</li>
+                                        <li class="btn btn-sm monabtn btn-outline-primary m-1" data-filter=".first">HTML</li>
+                                        <li class="btn btn-sm monabtn btn-outline-primary m-1" data-filter=".second">Ts</li>
+                                        <li class="btn btn-sm monabtn btn-outline-primary m-1" data-filter=".third">Angular</li>
+                                    </ul>
                                 </div>
-                                <!-- end shot -->
-
-                                <div class="shot">
-                                    <div class="screen">
-                                        <a class="zoom" href="/assets/images/project-2-1.JPG"><img src="/assets/images/project-2.JPG" alt="project-2" /></a>
-                                    </div>
-                                    <!-- end screen -->
-                                </div>
-                                <!-- end shot -->
-
-                                <div class="shot">
-                                    <div class="screen">
-                                        <a class="zoom" href="/assets/images/project-3-1.JPG"><img src="/assets/images/project-3.JPG" alt="project-3" /></a>
-                                    </div>
-                                    <!-- end screen -->
-                                </div>
-                                <!-- end shot -->
-
-                                <div class="shot">
-                                    <div class="screen">
-                                        <a class="zoom" href="/assets/images/project-4.JPG"><img src="/assets/images/project-4-1.JPG" alt="project-4" /></a>
-                                    </div>
-                                    <!-- end screen -->
-                                </div>
-                                <!-- end shot -->
-
-                                <div class="shot">
-                                    <div class="screen">
-                                        <a class="zoom" href="/assets/images/project-5.JPG"><img src="/assets/images/project-5-1.JPG" alt="project-5" /></a>
-                                    </div>
-                                    <!-- end screen -->
-                                </div>
-                                <!-- end shot -->
-
-                                <div class="shot">
-                                    <div class="screen">
-                                        <a class="zoom" href="/assets/images/project-6.JPG"><img src="/assets/images/project-6-1.JPG" alt="project-6" /></a>
-                                    </div>
-                                    <!-- end screen -->
-                                </div>
-                                <!-- end shot -->
-                                <div class="shot">
-                                    <div class="screen">
-                                        <a class="zoom" href="/assets/images/project-7.JPG"><img src="/assets/images/project-7-1.JPG" alt="project-7" /></a>
-                                    </div>
-                                    <!-- end screen -->
-                                </div>
-                                <!-- end shot -->
-
                             </div>
-                            <!-- end screenshots-carousel -->
+                            <div class="row portfolio-container">
+                                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid rounded w-100" src="assets/images/project-1.JPG" alt="">
+                                        <div class="portfolio-btn capp capp bg-primary d-flex align-items-center justify-content-center">
+                                            <a href="assets/images/screenshots/portfolio-1.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-github text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                            <a href="https://monafahham.github.io/FE16-CR02-MonaFahham/HTML/index.html" data-lightbox="portfolio">
+                                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid rounded w-100" src="assets/images/project-2.JPG" alt="">
+                                        <div class="portfolio-btn capp bg-primary d-flex align-items-center justify-content-center">
+                                            <a href="https://github.com/MonaFahham/FE16-CR02-MonaFahham" data-lightbox="portfolio">
+                                                <i class="fa fa-github text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                            <a href="https://monafahham.github.io/FE16-CR02-MonaFahham/HTML/index.html" data-lightbox="portfolio">
+                                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid rounded w-100" src="assets/images/project-3.JPG" alt="">
+                                        <div class="portfolio-btn capp bg-primary d-flex align-items-center justify-content-center">
+                                            <a href="assets/images/screenshots/portfolio-1.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-github text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                            <a href="assets/images/screenshots/portfolio-3.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid rounded w-100" src="assets/images/screenshots/portfolio-4.jpg" alt="">
+                                        <div class="portfolio-btn capp bg-primary d-flex align-items-center justify-content-center">
+                                            <a href="assets/images/screenshots/portfolio-1.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-github text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                            <a href="assets/images/screenshots/portfolio-4.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid rounded w-100" src="assets/images/screenshots/portfolio-5.jpg" alt="">
+                                        <div class="portfolio-btn capp bg-primary d-flex align-items-center justify-content-center">
+                                            <a href="assets/images/screenshots/portfolio-1.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-github text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                            <a href="assets/images/screenshots/portfolio-5.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid rounded w-100" src="assets/images/screenshots/portfolio-6.jpg" alt="">
+                                        <div class="portfolio-btn capp bg-primary d-flex align-items-center justify-content-center">
+                                            <a href="assets/images/screenshots/portfolio-1.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-github text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                            <a href="assets/images/screenshots/portfolio-6.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- end col-md-12 -->
                     </div>
                     <!-- end row -->
                 </div>
@@ -1238,6 +1278,8 @@
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="assets/js/jquery.gmaps.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/script2.js"></script>
+    <script src="assets/js/textw.js"></script>
 </body>
 
 </html
